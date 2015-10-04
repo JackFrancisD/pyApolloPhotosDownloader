@@ -4,7 +4,7 @@
 
 This is a Python 3.x script that extracts a list of direct links to high-resolution photos from NASA's Apollo mission Flickr photostream. You then give that list to wget and download it all.
 
-As soon as NASA released all the images, I wanted to download them all. Trying numerous "Flickr downloaders" was a terrible experience so a wrote my own script in an hour. Decided to publish it, so I refined it a bit and here it is!
+As soon as NASA released all the images, I wanted to DL them all. Trying numerous "Flickr downloaders" was disappointing to say the least, so I wrote my own script in like an hour. Decided to publish it, so I refined it a bit and here it is!
 
 ## How to use it
 
