@@ -14,7 +14,7 @@ You also need some file downloader that can load up a list of files to download 
 
 Download the script or clone the repo and just run it with `python3 pyApolloDL.py`
 
-It creates a file with a list of direct links which you then give to wget like this: `wget -i photolinks.lst`
+It creates a file with a list of direct links which you then give to wget like this: `wget -nc -i photolinks.lst`
 
 Wget downloads all photos in the same folder and voila!
 
@@ -40,13 +40,13 @@ Coded by JackFrancisD <jackfd@openmailbox.org>
 ...
 
 [*] Writing links to 'photolinks.lst'...
-[*] Done! Use `wget -i photolinks.lst` to download.
+[*] Done! Use `wget -nc -i photolinks.lst` to download.
 ```
 
 Now just use wget or whatever to download the pics.
 
 ```
-$ wget -i photolinks.lst
+$ wget -nc -i photolinks.lst
 ```
 
 ## Modification
