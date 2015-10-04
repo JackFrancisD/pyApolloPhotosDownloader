@@ -75,9 +75,8 @@ The script works like this:
 
 ## Contribute!
 
-If you give enough of a shit, feel free to submit patches, I'm happy to accept them as I probably won't be improving this script much unless I need it again for something.
-
-I am aware of all the issues (like no error checking and error handling), so don't waste your time submitting issues. If you wanna help, fix them, it's easy as the script is quite simple.
+If you give enough of a shit, feel free to submit patches, I'm happy to accept them as I probably won't be improving this script much unless there's some serious bug I haven't noticed, or until I need it again for some other Flickr downloads.
 
 Cheers,
+
 JackFrancisD
