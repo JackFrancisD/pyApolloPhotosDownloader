@@ -8,7 +8,7 @@ As soon as NASA released all the images, I wanted to download them all. Trying n
 
 ## How to use it
 
-You need Python 3.x for any platform, Windows, OS X and Linux should all works. (I tested only on Debian.)
+You need Python 3.x for any platform. Windows, OS X and Linux should all work. (I tested only on Debian.)
 
 Download the script and just run it with `python3 pyApolloDL.py`
 
