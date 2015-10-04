@@ -108,7 +108,7 @@ def writeLinksToFile():
 
 	f.write(buf)
 	f.close()
-	dbg("Done! Use `wget -i " + LINKS_LIST_FILENAME + "` to download.")
+	dbg("Done! Use `wget -nc -i " + LINKS_LIST_FILENAME + "` to download.")
 	return
 
 
