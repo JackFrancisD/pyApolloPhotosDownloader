@@ -1,6 +1,6 @@
 # pyApolloPhotosDownloader (Flickr downloader)
 
-## Intro
+## Introduction
 
 This is a Python 3.x script that extracts a list of direct links to high-resolution photos from NASA's Apollo mission Flickr photostream.
 
@@ -9,6 +9,8 @@ As soon as NASA released all the images, I wanted to download them all. Trying n
 ## How to use it
 
 You need Python 3.x for any platform. Windows, OS X and Linux should all work. (I tested only on Debian.)
+
+You also need some file downloader that can load up a list of files to download like wget, curl or FDM for Windows.
 
 Download the script and just run it with `python3 pyApolloDL.py`
 
@@ -25,7 +27,7 @@ However, keep in mind that the script only downloads photos in "Original" size f
 
 If you've got Python skillz, you can modify the script to download different sizes, and to circumvent disabled downloads, but it'll take you time.
 
-**NOTE: ** This script has only been tested with photostreams that span 10+ pages long. `getPageCount()` function relies on those three dots (`...`) between pages at the bottom of the photostream to count the pages properly. If that's missing, you have to modify the function or force it to return a custom, manually entered number of pages.
+> **NOTE:** This script has only been tested with photostreams that span 10+ pages long. `getPageCount()` function relies on those three dots (`...`) between pages at the bottom of the photostream to count the pages properly. If that's missing, you have to modify the function or force it to return a custom, manually entered number of pages.
 
 
 ### Algorithm
@@ -41,8 +43,8 @@ The script works like this:
  - Once done, write all links to a file whose filename is set by `LINKS_LIST_FILENAME`
 
 
-### Contribute
+## Contribute!
 
 If you give enough of a shit, feel free to submit patches, I'm happy to accept them as I probably won't be improving this script much unless I need it again for something.
 
-I am aware of all the issues (like no error checking and handling at all), so don't waste your time submitting issues. If you wanna help, fix them, it's easy as the script is quite simple.
+I am aware of all the issues (like no error checking and error handling), so don't waste your time submitting issues. If you wanna help, fix them, it's easy as the script is quite simple.
