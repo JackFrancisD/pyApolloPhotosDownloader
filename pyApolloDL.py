@@ -83,7 +83,7 @@ def getAllLinks():
 		response = urllib.request.urlopen(pageUrl)
 		data = response.read()
 
-		dbg("Getting direct links from page " + str(i) + "...")
+		dbg("Extracting direct links from page " + str(i) + "...")
 		linksList = linksList + getDirectLinksFromPage(str(data))
 		#print(linksList) # TODO dbg
 		
