@@ -14,7 +14,7 @@ You also need some file downloader that can load up a list of files to download 
 
 Download the script or clone the repo and just run it with `python3 pyApolloDL.py`
 
-It creates a file with a list of direct links which you then give to wget like this: `wget -nc -i photolinks.lst`
+It creates a file with a list of direct links which you then give to wget: `wget -nc -i photolinks.lst`
 
 Wget downloads all photos in the same folder and voila!
 
