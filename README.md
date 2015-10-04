@@ -19,6 +19,36 @@ It creates a file with a list of direct links which you then give to wget like t
 Wget downloads all photos in the same folder and voila!
 
 
+### Example
+
+```
+$ python3 pyApolloDL.py 
+pyApolloPhotosDownloader v0.1 ALPHA - Flickr downloader
+Coded by JackFrancisD <jackfd@openmailbox.org>
+==========================================================
+[!] This software is an early version. No errors are handled, but it does work.
+[*] Starting Flickr direct link extraction from https://www.flickr.com/photos/projectapolloarchive
+[*] Extracting page count...
+[*] 101 pages found.
+[*] Getting direct links from page 1...
+[*] Getting direct links from page 2...
+[*] Getting direct links from page 3...
+[*] Getting direct links from page 4...
+[*] Getting direct links from page 5...
+[*] Getting direct links from page 6...
+
+...
+
+[*] Writing links to 'photolinks.lst'...
+[*] Done! Use `wget -i photolinks.lst` to download.
+```
+
+Now just use wget or whatever to download the pics.
+
+```
+$ wget -i photolinks.lst
+```
+
 ## Modification
 
 This script can be easily modified to download other photostreams from Flickr.
@@ -27,7 +57,7 @@ However, keep in mind that the script only downloads photos in "Original" size f
 
 If you've got Python skillz, you can modify the script to download different sizes, and to circumvent disabled downloads, but it'll take you time.
 
-> **NOTE:** This script has only been tested with photostreams that span 10+ pages long. `getPageCount()` function relies on those three dots (`...`) between pages at the bottom of the photostream to count the pages properly. If that's missing, you have to modify the function or force it to return a custom, manually entered number of pages.
+**NOTE:** This script has only been tested with photostreams that span 10+ pages long. `getPageCount()` function relies on those three dots (`...`) between pages at the bottom of the photostream to count the pages properly. If that's missing, you have to modify the function or force it to return a custom, manually entered number of pages.
 
 
 ### Algorithm
@@ -48,3 +78,6 @@ The script works like this:
 If you give enough of a shit, feel free to submit patches, I'm happy to accept them as I probably won't be improving this script much unless I need it again for something.
 
 I am aware of all the issues (like no error checking and error handling), so don't waste your time submitting issues. If you wanna help, fix them, it's easy as the script is quite simple.
+
+Cheers,
+JackFrancisD
