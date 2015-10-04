@@ -1,4 +1,4 @@
-# pyFlickrDownloader - 'Apollo' Edition
+# pyApolloPhotosDownloader (Flickr downloader)
 
 ## Intro
 
@@ -19,7 +19,9 @@ Wget downloads all photos in the same folder and voila!
 
 ## Modification
 
-If you want to modify and adapt the script for other Flickr downloads, keep in mind that the script only downloads photos in "Original" size from Flickr, and only if the uploader has enabled downloads (the latter has not been tested, to be honest, but I suppose that's the case).
+This script can be easily modified to download other photostreams from Flickr.
+
+However, keep in mind that the script only downloads photos in "Original" size from Flickr, and only if the uploader has enabled downloads (the latter has not been tested, to be honest, but I suppose that's the case).
 
 If you've got Python skillz, you can modify the script to download different sizes, and to circumvent disabled downloads, but it'll take you time.
 
@@ -30,14 +32,17 @@ If you've got Python skillz, you can modify the script to download different siz
 
 The script works like this:
 
- - Send a GET request and download the HTML from the MAIN_URL variable.
+ - Use `urllib` to download the HTML from the `MAIN_URL` variable.
  - Parse the HTML to extract the number of pages from it.
  - Repeat the following loop for each page:
  	- Download the HTML of the page
  	- Parse it to extract direct links to "Original"-sized images
  	- Append links to a global variable `finalLinksList`
- - Once done, write all links to a file whose filename is set by LINKS_LIST_FILENAME
+ - Once done, write all links to a file whose filename is set by `LINKS_LIST_FILENAME`
+
 
 ### Contribute
 
 If you give enough of a shit, feel free to submit patches, I'm happy to accept them as I probably won't be improving this script much unless I need it again for something.
+
+I am aware of all the issues (like no error checking and handling at all), so don't waste your time submitting issues. If you wanna help, fix them, it's easy as the script is quite simple.
