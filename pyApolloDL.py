@@ -99,7 +99,7 @@ def writeLinksToFile():
 	with open(LINKS_LIST_FILENAME, 'w') as file:
 		file.write('\n'.join(finalLinksList))
 	
-	dbg("Done! Use `wget -nc -i " + LINKS_LIST_FILENAME + "` to download.")
+	dbg("Done! Use `wget -nc -c -i " + LINKS_LIST_FILENAME + "` to download.")
 	return
 
 
