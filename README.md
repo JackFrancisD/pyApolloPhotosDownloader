@@ -77,6 +77,8 @@ The script works like this:
 
 If you give enough of a shit, feel free to submit patches, I'm happy to accept them as I probably won't be improving this script much unless there's some serious bug I haven't noticed, or until I need it again for some other Flickr downloads.
 
+I would also like to thank [FredrikAugust](https://github.com/FredrikAugust) for contributing by optimizing my `writeLinksToFile()` function ([commit here](https://github.com/JackFrancisD/pyApolloPhotosDownloader/commit/9d7501bbdeb0a7e6888e5154aa006c4efac01d61)) because I just didn't do any optimizations.
+
 Cheers,
 
 JackFrancisD
