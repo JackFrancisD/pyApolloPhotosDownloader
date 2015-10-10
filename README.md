@@ -40,14 +40,16 @@ Coded by JackFrancisD <jackfd@openmailbox.org>
 ...
 
 [*] Writing links to 'photolinks.lst'...
-[*] Done! Use `wget -nc -i photolinks.lst` to download.
+[*] Done! Use `wget -nc -c -i photolinks.lst` to download.
 ```
 
 Now just use wget or whatever to download the pics.
 
 ```
-$ wget -nc -i photolinks.lst
+$ wget -nc -c -i photolinks.lst
 ```
+
+> Note: '-nc' stands for "no clobber" and it will tell wget not to overwrite any existing files. '-c' stands for "continue", which continues downloading unfinished files. These two switches together make it easy to continue downloading in case your internet connection breaks.
 
 ## Modification
 
