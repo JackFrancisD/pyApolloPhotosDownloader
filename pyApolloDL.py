@@ -84,7 +84,7 @@ def getAllLinks():
 		data = response.read()
 
 		dbg("Extracting direct links from page " + str(i) + "...")
-		linksList = linksList + getDirectLinksFromPage(str(data))
+		linksList.append(getDirectLinksFromPage(str(data)))
 		#print(linksList) # TODO dbg
 		
 		finalLinksList = linksList
@@ -94,20 +94,11 @@ def getAllLinks():
 
 
 def writeLinksToFile():
-	buf = ""
-	i=0
-
 	dbg("Writing links to '" + LINKS_LIST_FILENAME + "'...")
 
-	f=open(LINKS_LIST_FILENAME,"w")
+	with open(LINKS_LIST_FILENAME, 'w') as file:
+		file.write('\n'.join(finalLinksList))
 	
-	while i < len(finalLinksList):
-		line = finalLinksList[i] + "\n"
-		buf += line
-		i += 1
-
-	f.write(buf)
-	f.close()
 	dbg("Done! Use `wget -nc -i " + LINKS_LIST_FILENAME + "` to download.")
 	return
 
