@@ -8,7 +8,7 @@ The moment I saw they posted like thousands of photos, I had to have them. Tryin
 
 ## How to use it
 
-You need Python 3.x for any platform. Windows, OS X and Linux should all work. (I tested only on Debian.)
+You need Python 3.x for any platform. Windows, OS X and GNU/Linux should all work. (I tested only on Debian.)
 
 You also need some file downloader that can load up a list of files to download like wget, curl or FDM for Windows.
 
