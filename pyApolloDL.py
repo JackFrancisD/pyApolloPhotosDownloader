@@ -94,12 +94,21 @@ def getAllLinks():
 
 
 def writeLinksToFile():
+	buf = ""
+	i=0
+
 	dbg("Writing links to '" + LINKS_LIST_FILENAME + "'...")
 
-	with open(LINKS_LIST_FILENAME, 'w') as file:
-		file.write('\n'.join(finalLinksList))
+	f=open(LINKS_LIST_FILENAME,"w")
 	
-	dbg("Done! Use `wget -nc -c -i " + LINKS_LIST_FILENAME + "` to download.")
+	while i < len(finalLinksList):
+		line = finalLinksList[i] + "\n"
+		buf += line
+		i += 1
+
+	f.write(buf)
+	f.close()
+	dbg("Done! Use `wget -i " + LINKS_LIST_FILENAME + "` to download.")
 	return
 
 
